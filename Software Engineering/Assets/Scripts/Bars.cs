@@ -2,7 +2,7 @@
 
 public class Bars : MonoBehaviour {
 
-    public float curHP = 100;
+    public float curHP = 100f;
     public GameObject barHP;
 	
 	void Start () {
