@@ -2,14 +2,20 @@
 
 public class Bars : MonoBehaviour {
 
-    public float curHP = 100f;
+    private float curHP = 0f;
     public GameObject barHP;
-	
-	void Start () {
-		
-	}
+    GameObject WarriorClass;
+    Warrior wrr;
 
-	void Update () {
+    void Start()
+    {
+        WarriorClass = GameObject.Find("character");
+        wrr = WarriorClass.GetComponent<Warrior>();
+    }
+
+    void Update () {
+        curHP = wrr.GetHealth(); //Warrior.Instance.GetHealth ();
+        Debug.Log("Jump Force for controller: " + curHP + " - success");
         barHP.transform.localScale = new Vector3(curHP / 100, 1, 1);
     }
 }

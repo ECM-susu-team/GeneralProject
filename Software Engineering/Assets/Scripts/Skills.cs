@@ -2,16 +2,20 @@
 
 public class Skills : MonoBehaviour {
 
-    public float curHP = 100f, speed = 20f;
+	public string NickName;
+	public int Max_HP;
+	public float Jump_Force;
+	public float Speed;
+	public float Weight;
 
     public void firstSKill()
     {
-        curHP = 100;
-        speed = 40;
+        Max_HP = 100;
+        Speed = 40;
     }
-    public void thirdSKill()
+    public void secondSKill()
     {
-        curHP = 100;
+        Max_HP = 100;
     }
     
     
