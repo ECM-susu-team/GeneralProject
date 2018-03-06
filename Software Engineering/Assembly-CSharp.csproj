@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\Bars.cs" />
      <Compile Include="Assets\Scripts\BaseObject.cs" />
      <Compile Include="Assets\Scripts\BonusSystem.cs" />
+     <Compile Include="Assets\Scripts\ButtonsSkills.cs" />
      <Compile Include="Assets\Scripts\CameraMove.cs" />
      <Compile Include="Assets\Scripts\DieSpace.cs" />
      <Compile Include="Assets\Scripts\Finish.cs" />
@@ -66,6 +67,7 @@
      <Compile Include="Assets\Scripts\Skills.cs" />
      <Compile Include="Assets\Scripts\SomeCharacter.cs" />
      <Compile Include="Assets\Scripts\Warrior.cs" />
+     <Compile Include="Assets\Scripts\WaveSpawner.cs" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>C:/Users/Aleks/Desktop/Университет/Программирование/Программная инженерия/Software Engineering/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>

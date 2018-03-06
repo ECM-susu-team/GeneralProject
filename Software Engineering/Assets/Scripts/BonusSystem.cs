@@ -1,5 +1,4 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 
 public class BonusSystem : MonoBehaviour{
 
@@ -12,7 +11,6 @@ public class BonusSystem : MonoBehaviour{
             this.score++;
             other.gameObject.SetActive(false);
         }
-        print(score);
         if (other.gameObject.name == "DieSpace")
         {
             this.score = 0;

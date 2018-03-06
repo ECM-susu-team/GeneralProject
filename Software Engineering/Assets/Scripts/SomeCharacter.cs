@@ -6,7 +6,6 @@ public class SomeCharacter : BaseObject {
 
 	protected int health;
 	protected float jumpForce;
-    public GameObject barHP;
 
     public int GetHealth(){
 		return health;

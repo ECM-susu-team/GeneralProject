@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Bars : MonoBehaviour {
 
@@ -14,8 +15,13 @@ public class Bars : MonoBehaviour {
     }
 
     void Update () {
-        curHP = wrr.GetHealth(); //Warrior.Instance.GetHealth ();
-        Debug.Log("Jump Force for controller: " + curHP + " - success");
-        barHP.transform.localScale = new Vector3(curHP / 100, 1, 1);
+        if (curHP != wrr.GetHealth())
+        {
+            curHP = wrr.GetHealth(); //Warrior.Instance.GetHealth ();
+            if (curHP <= 0)
+                SceneManager.LoadScene("Scene1");
+            Debug.Log("Jump Force for controller: " + curHP + " - success");
+            barHP.transform.localScale = new Vector3(curHP / 100, 1, 1);
+        }
     }
 }
